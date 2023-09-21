@@ -1,0 +1,18 @@
+﻿@model Core_DepartmanProject.Models.Birim
+@{
+    ViewData["Title"] = "YeniBirim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<form class="form-group" method="post">
+
+    <p style="text-align:center; margin-bottom:1rem"><b>Birim Adı</b></p>
+    @Html.TextBoxFor(x=>x.BirimAd, new{@class="form-control"})
+    <br />
+    <button class="btn btn-info">Birim Ekle</button>
+</form>
+
+
+
